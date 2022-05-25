@@ -1,4 +1,4 @@
-# Anyfin graphQL frontend application
+# Anyfin frontend application
 
 React front-end application to show the exchange rates and convert SEK values to any currency
 
