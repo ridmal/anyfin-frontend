@@ -1,0 +1,11 @@
+.buttonComponent {
+  height: 50px;
+  min-width: 150px;
+  background-color: #ffdf6e;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: ease background-color 250ms;
+  border: 1px solid gray;
+}

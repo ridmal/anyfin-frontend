@@ -1,19 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { Auth0Provider } from '@auth0/auth0-react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Config from './config';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+export const apolloClient = new ApolloClient({
+  uri: Config.graphQLServer,
+  cache: new InMemoryCache(),
+});
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Auth0Provider
+      domain={Config.authProviderDomain}
+      clientId={Config.authProviderClientId}
+      redirectUri={window.location.origin}
+      audience={Config.authProviderAudience}
+    >
+      <ApolloProvider client={apolloClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </ApolloProvider>
+    </Auth0Provider>
+  </React.StrictMode>,
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

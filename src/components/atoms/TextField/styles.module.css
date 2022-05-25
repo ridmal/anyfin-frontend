@@ -1,0 +1,12 @@
+.labelText {
+  text-align: left;
+}
+
+.textInputContainer {
+  background-color: aliceblue;
+  color: black;
+  height: 40px;
+  width: 200px;
+  font-size: large;
+  padding-left: 10px;
+}

@@ -1,0 +1,131 @@
+.homeContainer {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.amountContainer {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #282c34;
+  color: white;
+}
+
+.appLogo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.countryContainer {
+  flex: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: aliceblue;
+  /* put yellowish color */
+  color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.selectCountyTitle {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 4vh;
+}
+
+.textFieldContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.countiesTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.currencyText {
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.textInputStyle {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.dropDownContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.dropDownController {
+  height: 50px;
+  margin-right: 40px;
+  min-width: 70vmin;
+  text-align: left;
+}
+
+.dropDown {
+  text-align: left;
+  min-height: 5vmin;
+}
+
+.dropDownArrow {
+  margin-top: 8px;
+}
+
+.countriesListContainer {
+  text-align: left;
+  padding-top: 6vh;
+}
+
+.logoutContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 2vh;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: 110vmin;
+  flex-direction: row;
+  font-size: medium;
+  padding-left: 10px;
+}
+
+.headerItem {
+  width: 27vmin;
+  text-align: center;
+  padding: 2px;
+}
+
+.userContainer {
+  position: absolute;
+  top: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.greetingText {
+  color: #ffdf6e;
+  margin-right: 1vmin;
+}

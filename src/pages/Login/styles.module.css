@@ -1,0 +1,38 @@
+.homeContainer {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: aliceblue;
+}
+
+.amountContainer {
+  height: 70vh;
+  width: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #39393a;
+  color: white;
+  border-radius: 20px;
+}
+
+.appLogo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.loginButton {
+  margin-top: 10vh;
+  width: 20vh;
+  height: 8vh;
+}
+
+.loginButtonTitle {
+  font-size: 18px;
+  font-weight: 700;
+  align-self: center;
+}

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  width: 110vmin;
+  min-height: 6vmin;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: white;
+  padding-right: 10px;
+  border: lightgray;
+  border-style: solid;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.countryItem {
+  min-width: 27vmin;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.closeIcon {
+  position: relative;
+  left: 111vmin;
+  margin-bottom: -16px;
+}
