@@ -7,7 +7,6 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { useNavigate } from 'react-router-dom';
 
 const Login: FC = () => {
-  // we can add a loading status to here
   const { loginWithRedirect, user, isAuthenticated, getAccessTokenSilently } = useAuth0();
   let navigate = useNavigate();
   const { setToken, setUser } = useStore((state) => state);
@@ -19,7 +18,6 @@ const Login: FC = () => {
         email: user?.email || '',
         name: user?.name || '',
       });
-      // Add a time-out this
       navigate('home');
     }
   }, [isAuthenticated]);

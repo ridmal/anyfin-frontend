@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useRef } from 'react';
+import React, { ChangeEvent, FC } from 'react';
 import styles from './styles.module.css';
 
 interface Props {
@@ -26,8 +26,6 @@ const TextField: FC<Props> = ({
   onBlur,
   style,
 }) => {
-  // const firstFieldRef = useRef<HTMLInputElement>(null);
-
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     onChange(event?.target?.value);
   };
@@ -49,7 +47,6 @@ const TextField: FC<Props> = ({
           onChange={(e) => {
             handleChange(e);
           }}
-          // ref={firstFieldRef}
           disabled={isDisabled}
           type={type}
           onBlur={onBlur}

@@ -22,13 +22,9 @@ const Home: FC = () => {
   } = useStore.getState();
   const [inputValue, setInputValue] = useState<string>('0');
   const { getAllCountries, getCountryDetails } = useCountriesData();
-  // we can add a loading status to here
   const { logout } = useAuth0();
   const headers = ['Name', 'Population', 'Exchange Rate', 'Value'];
 
-  /*
-  Test cases
-  */
   useEffect(() => {
     getAllCountries();
   }, []);

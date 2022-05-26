@@ -20,8 +20,7 @@ root.render(
       domain={Config.authProviderDomain}
       clientId={Config.authProviderClientId}
       redirectUri={window.location.origin}
-      audience={Config.authProviderAudience}
-    >
+      audience={Config.authProviderAudience}>
       <ApolloProvider client={apolloClient}>
         <BrowserRouter>
           <Routes>
